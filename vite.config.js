@@ -6,5 +6,5 @@ export default defineConfig({
   // Windows filesystems are case-insensitive, so uploaded images can end up
   // with uppercase extensions (e.g. .JPG). Vite's default asset matching is
   // case-sensitive, so we explicitly include the uppercase variants too.
-  assetsInclude: ['**/*.JPG', '**/*.JPEG', '**/*.PNG', '**/*.GIF', '**/*.WEBP', '**/*.SVG'],
+  base: process.env.VITE_BASE_PATH || "/ngun--vuthy--web",
 });
